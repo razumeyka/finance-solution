@@ -5,7 +5,7 @@ $(document).ready(function(){
     $('.accordion__answer').hide();
     $('.accordion__question').click(function(){
         $(this).next().slideToggle(500);
-		$(this).toggleClass('accordionn__question_active');
+		$(this).toggleClass('accordion__question_active');
     });
     
 // mask
