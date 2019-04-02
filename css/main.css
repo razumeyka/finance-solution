@@ -124,6 +124,7 @@ a.button:hover {
 }
 
 .phone {
+	display: block;
     font-family: 'Geometria';
     font-weight: 700;
     font-size: 18px;
@@ -347,6 +348,7 @@ a.phone:hover {
 .details {
 	padding: 100px 0;
 	position: relative;
+	overflow: hidden;
 }
 
 .details__background {
@@ -355,12 +357,13 @@ a.phone:hover {
 	width: 550px;
 	height: 500px;
 	position: absolute;
-	top: 50px;
-	left: 50px;
+	top: -100px;
+	left: -100px;
 }
 
 .details__row {
 	justify-content: flex-end;
+	position: relative;
 }
 
 .details__text {
@@ -397,11 +400,24 @@ a.phone:hover {
 	line-height: 1.3;
 }
 
+.details__video-wr {
+	position: absolute;
+	left: 0;
+	top: 100px;
+}
+
+.details__video {
+	background: red;
+	width: 100%;
+	height: 400px;
+}
+
 /*participants*/
 
 .participants__list {
 	padding-left: 40px;
 	position: relative;
+	overflow: hidden;
 }
 
 .participants__list:before {
@@ -486,6 +502,7 @@ a.phone:hover {
 	padding: 80px 0 50px;
 	position: relative;
 	color: #ffffff;
+	overflow: hidden;
 }
 
 .advantages__background {
@@ -580,6 +597,7 @@ a.phone:hover {
 
 .programs {
 	padding: 100px 0;
+	overflow: hidden;
 }
 
 .programs__program {
@@ -822,7 +840,7 @@ a.phone:hover {
 }
 
 .accordion__question_active:after {
-	background-position: -2px -478px;
+	background-position: -83px -441px;
 }
 
 .accordion__answer {
@@ -839,7 +857,9 @@ a.phone:hover {
 
 .steps {
 	padding: 100px 0;
+	overflow: hidden;
 }
+
 .steps__step {
 	display: flex;
 	flex-wrap: nowrap;
@@ -926,6 +946,7 @@ a.phone:hover {
 
 .team {
 	padding: 100px 0;
+	overflow: hidden;
 }
 
 .carousel-indicators.team__carousel-indicators {
@@ -1000,6 +1021,7 @@ a.phone:hover {
 .reviews {
 	padding: 100px 0;
 	position: relative;
+	overflow: hidden;
 }
 
 .reviews__background {
@@ -1162,6 +1184,30 @@ footer {
 	background: #F4F4F4;
 }
 
+.footer__logo {
+	margin-right: 3rem;
+}
+
+.footer__navbar-brand {
+	margin: 0;
+}
+
+.footer__phone {
+	padding: 20px 0 10px 45px;
+	color: #2E4459;
+	font-weight: 500;
+}
+
+.footer__phone:hover {
+	color: #2E4459;
+}
+
+.footer__phone:before {
+    background: url(../images/tel.png) no-repeat center;
+    left: 3px;
+    top: 13px;
+}
+
 .copyright {
 	background: #2E4459;
 	font-family: 'Geometria';
@@ -1191,9 +1237,35 @@ footer {
 		font-size: 14px;
 		padding: 0.7rem 0.5rem;
 	}
+	
+	.carousel-control-next {
+		right: 10px;
+	}
+	
+	.carousel-control-prev{
+		left: 10px;
+	}
+	
+	.details__text {
+		padding: 50px 30px 240px 30px;
+	}
+	
+	.details__video-wr {
+		left: 100px;
+		top: 470px;
+	}
 }
 
 @media screen and (max-width: 1023px) {
+	
+	.results__text {
+		font-size: 16px;
+	}
+	
+	.details__text {
+		font-size: 28px;
+	}
+	
     .accordion__question {
 		font-size: 20px;
 	}
@@ -1207,6 +1279,23 @@ footer {
 	.reviews__text {
 		padding: 35px 0;
 		text-align: center;
+	}
+	
+	.details__text {
+		padding: 50px 30px 140px 30px;
+	}
+	
+	.details__text2 {
+		font-size: 46px;
+	}
+	
+	.details__text3 {
+		font-size: 36px;
+	}
+	
+	.details__video-wr {
+		top: 330px;
+		left: 0;
 	}
 }
 
@@ -1240,6 +1329,19 @@ footer {
 	
 	.results__text_1 {
 		text-align: center;
+	}
+	
+	.results__icon {
+		margin: 15px;
+	}
+	
+	.details__text {
+		padding: 30px 20px;
+	}
+	
+	.details__video-wr {
+		position: static;
+		margin-top: 30px;
 	}
 	
 	.programs__content {
@@ -1288,10 +1390,26 @@ footer {
 	.accordion__answer {
 		padding: 20px 15px 20px 25px;
 	}
+	
+	.carousel-control-next {
+		right: -20px;
+	}
+	
+	.carousel-control-prev{
+		left: -20px;
+	}
 
 }
 
 @media screen and (max-width: 639px) {
+	
+	.details__text {
+		font-size: 22px;
+	}
+	
+	.details__text3 {
+		font-size: 26px;
+	}
 	
 	.programs__inner {
 		padding: 20px 15px;
@@ -1303,6 +1421,10 @@ footer {
 	
     .reviews__review {
 		font-size: 16px;
+	}
+	
+	.carousel-control-prev, .carousel-control-next {
+		display: none;
 	}
 }
 
