@@ -364,15 +364,15 @@ a.phone:hover {
 }
 
 .details__text {
-	box-sizing: border-box;
-	background: #FFFFFF;
-	border: 30px solid #F4F4F4;
-	font-family: 'Geometria';
-	font-size: 36px;
-	font-weight: 500;
-	text-align: center;
-	color: #2E4459;
-	padding: 30px 30px 30px 100px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 30px solid #F4F4F4;
+    font-family: 'Geometria';
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+    color: #2E4459;
+    padding: 115px 65px 140px 200px;
 }
 
 .details__text1 {
@@ -380,24 +380,110 @@ a.phone:hover {
 }
 
 .details__text2 {
-	font-weight: 900;
-	color: #467CFA;
+    font-size: 54px;
+    font-weight: 900;
+    color: #467CFA;
+    margin: 10px 0px 15px;
 }
 
 .details__text3 {
-	font-weight: 700;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    margin-bottom: 10px;
 }
 
 .details__text4 {
-	
+	line-height: 1.3;
 }
 
 /*participants*/
 
+.participants__list {
+	padding-left: 40px;
+	position: relative;
+}
+
+.participants__list:before {
+    content: "";
+    background: #467CFA;
+    width: 5px;
+    height: 70%;
+    position: absolute;
+    left: 30px;
+    top: 50px;
+}
+
+.participants__item {
+	box-sizing: border-box;
+	background: #F4F4F4;
+	border-radius: 40px 40px 40px 0px;
+	font-family: 'Geometria';
+	font-size: 24px;
+	font-weight: 700;
+	color: #2E4459;
+	padding: 20px 10px 20px 40px;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+.participants__item:before {
+	content: "";
+	background: url('../images/sprites.png') no-repeat -1px -533px;
+	width: 70px;
+	height: 54px;
+	position: absolute;
+	left: -35px;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+}
+
+.participants__img-wr {
+	position: relative;
+}
+
+.participants__img {
+	background: url(../images/center-circle.png) no-repeat center;
+	background-size: contain;
+	box-sizing: border-box;
+	border-radius: 50%;
+	width: 350px;
+	height: 350px;
+	position: relative;
+	z-index: 1;
+}
+
+.participants__img-wr:before {
+	content: "";
+	box-sizing: border-box;
+	border-radius: 50%;
+	background: #F4F4F4;;
+	width: 470px;
+	height: 470px;
+	position: absolute;
+	top: -60px;
+	left: -60px;
+}
+
+.participants__img-wr:after{
+	content: "";
+	box-sizing: border-box;
+	border-radius: 50%;
+	background: #E8E8E8;
+	width: 410px;
+	height: 410px;
+	position: absolute;
+	top: -30px;
+	left: -30px;
+}
+
+/*advantages*/
+
 .advantages {
 	background: url(../images/background_blue.png) no-repeat center;
 	background-size: cover;
-	padding: 100px 0;
+	padding: 80px 0 50px;
 	position: relative;
 	color: #ffffff;
 }
@@ -419,6 +505,7 @@ a.phone:hover {
 
 .advantages__caption {
 	color: #ffffff;
+	margin-bottom: 80px;
 }
 
 .advantages__number {
@@ -433,7 +520,7 @@ a.phone:hover {
 	font-weight: 700;
 	text-align: center;
 	color: #2154CF;
-	margin: 0 auto 30px;
+	margin: 0 auto 35px;
 	position: relative;
 }
 
@@ -463,21 +550,199 @@ a.phone:hover {
 	left: -9px;
 }
 
+.advantages__line {
+    background: #2154CF;
+    border: 4px solid #ffffff;
+    border-radius: 10px;
+    width: 100%;
+    height: 11px;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
 .advantages__description {
-	font-family: 'Geometria';
-	font-size: 24px;
-	font-weight: 700;
+    font-family: 'Geometria';
+    font-size: 24px;
+    line-height: 1.3;
+    font-weight: 700;
 }
 
 .advantages__call {
-	font-family: 'Geometria';
-	font-weight: 500;
-	font-size: 40px;
-	text-align: center;
+    font-family: 'Geometria';
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 0.1px;
+    text-align: center;
+    margin-top: 55px;
 }
 
+/*prorgams*/
 
-/*catalog-page*/
+.programs {
+	padding: 100px 0;
+}
+
+.programs__program {
+	background: #FFFFFF;
+	box-shadow: 0px 15px 34px rgba(67, 107, 203, 0.15), 0px 3px 3px rgba(67, 107, 203, 0.08);
+	border-radius: 34px;
+}
+
+.programs__caption {
+	background: #467CFA;
+	border-radius: 20px 20px 0px 0px;
+	font-family: 'Geometria';
+	font-size: 40px;
+	font-weight: 700;
+	text-align: center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	padding: 20px 0;
+}
+
+.programs__inner {
+	padding: 40px;
+}
+
+.prorgams__info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.programs__content {
+	background: #F4F4F4;
+	padding: 20px;
+}
+
+.programs__icon {
+	background: url('../images/sprites.png') no-repeat -49px -399px;
+	width: 46px;
+	height: 42px;
+	margin: 0 auto 35px;
+}
+
+.programs__icon_access {
+	background-position:  -551px 6px;
+}
+
+.programs__icon_docs {
+	background-position: -410px -269px;
+}
+
+.programs__item {
+	font-family: 'Geometria';
+	font-size: 18px;
+	font-weight: 500;
+	text-align: center;
+	color: #2E4459;
+}
+
+.programs__content_full {
+	margin: 20px 0;
+}
+
+.prorgams__additional {
+    font-family: 'Geometria';
+    font-size: 16px;
+    line-height: 1.45;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #000000;
+}
+
+.programs__discount {
+    font-family: 'Geometria';
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    color: #467CFA;
+    margin: 40px 0 20px;
+}
+
+.programs__old-price {
+	font-family: 'Geometria';
+	font-size: 24px;
+	font-weight: 500;
+	text-align: center;
+	color: #000000;
+	position: relative;
+}
+
+.programs__old-price:before {
+	content: "";
+	width: 100%;
+	height: 2px;
+	background: #000000;
+	border-radius: 5px;
+	position: absolute;
+	top: 13px;
+}
+
+.programs__price {
+    box-sizing: border-box;
+    border: 4px solid #F4F8FB;
+    font-family: 'Geometria';
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+    padding: 5px 10px;
+    margin: 32px 0 46px;
+    width: 100%;
+    max-width: 340px;
+}
+
+.programs__button {
+    height: 50px;
+    max-width: 350px;
+    line-height: 50px;
+}
+
+.programs__documents {
+    font-family: 'Geometria';
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.01px;
+    text-align: center;
+    color: #001B36;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.programs ul {
+	padding: 0;
+}
+
+.programs__document {
+	font-family: 'Geometria';
+	font-size: 16px;
+	font-weight: 500;
+	color: #000000;
+	padding: 7px 0 7px 40px;
+	list-style: none;
+	position: relative;
+}
+
+.programs__document:before {
+	content: "";
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #2E4459;
+	position: absolute;
+	left: 15px;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+}
+
+.programs__document:nth-child(odd) {
+	background: #F4F4F4;
+}
+
 
 
 /*accordion */
@@ -772,6 +1037,7 @@ a.phone:hover {
 
 .carousel {
 	z-index: 1;
+	margin: 0 -35px;
 }
 
 .carousel-item_reviews {
@@ -931,6 +1197,17 @@ footer {
     .accordion__question {
 		font-size: 20px;
 	}
+	
+	.reviews__review-wr {
+		flex-direction: column;
+		align-items: center;
+		padding: 40px 30px;
+	}
+	
+	.reviews__text {
+		padding: 35px 0;
+		text-align: center;
+	}
 }
 
 @media screen and (max-width: 767px) {
@@ -965,9 +1242,16 @@ footer {
 		text-align: center;
 	}
 	
-	.reviews__review-wr {
-		flex-direction: column;
-		align-items: center;
+	.programs__content {
+		margin-bottom: 20px;
+	}
+
+	.programs__content_full {
+		margin: 0 0 20px;
+	}
+	
+	.programs__documents {
+		margin: 40px 0 15px;
 	}
 	
 	.accordion__question {
@@ -1008,7 +1292,18 @@ footer {
 }
 
 @media screen and (max-width: 639px) {
-    
+	
+	.programs__inner {
+		padding: 20px 15px;
+	}
+	
+	.reviews__name {
+		font-size: 26px;
+	}
+	
+    .reviews__review {
+		font-size: 16px;
+	}
 }
 
 @media screen and (max-width: 500px) {
