@@ -346,19 +346,23 @@ a.phone:hover {
 /*details*/
 
 .details {
-	padding: 100px 0;
-	position: relative;
-	overflow: hidden;
+    padding: 80px 0 120px;
+    position: relative;
+    overflow: hidden;
+}
+
+.details__caption {
+    margin: 0 auto 52px;
 }
 
 .details__background {
-	background: url(../images/dots.png) repeat center;
-	background-size: cover;
-	width: 550px;
-	height: 500px;
-	position: absolute;
-	top: -100px;
-	left: -100px;
+    background: url(../images/dots.png) repeat center;
+    background-size: cover;
+    width: 550px;
+    height: 500px;
+    position: absolute;
+    top: -138px;
+    left: -186px;
 }
 
 .details__row {
@@ -375,7 +379,7 @@ a.phone:hover {
     font-weight: 500;
     text-align: center;
     color: #2E4459;
-    padding: 115px 65px 140px 200px;
+    padding: 115px 65px 115px 200px;
 }
 
 .details__text1 {
@@ -403,16 +407,24 @@ a.phone:hover {
 .details__video-wr {
 	position: absolute;
 	left: 0;
-	top: 100px;
+	top: 83px;
 }
 
 .details__video {
-	background: red;
 	width: 100%;
-	height: 400px;
+	max-width: 725px;
+	height: 420px;
 }
 
 /*participants*/
+
+.participants {
+	padding: 20px 0 75px;
+}
+
+.participants__caption {
+    margin: 0 auto 75px;
+}
 
 .participants__list {
 	padding-left: 40px;
@@ -424,7 +436,7 @@ a.phone:hover {
     content: "";
     background: #467CFA;
     width: 5px;
-    height: 70%;
+    height: 66%;
     position: absolute;
     left: 30px;
     top: 50px;
@@ -435,11 +447,13 @@ a.phone:hover {
 	background: #F4F4F4;
 	border-radius: 40px 40px 40px 0px;
 	font-family: 'Geometria';
-	font-size: 24px;
+	font-size: 22px;
+	line-height: 1.4;
+	letter-spacing: 0.001px;
 	font-weight: 700;
 	color: #2E4459;
 	padding: 20px 10px 20px 40px;
-	margin-bottom: 15px;
+	margin-bottom: 30px;
 	position: relative;
 }
 
@@ -449,14 +463,22 @@ a.phone:hover {
 	width: 70px;
 	height: 54px;
 	position: absolute;
-	left: -35px;
-	top: 0;
-	bottom: 0;
-	margin: auto 0;
+	left: -33px;
+    top: 28px;
+}
+
+.participants__item_mobile {
+	display: none;
+}
+
+.participants__center {
+	display: flex;
 }
 
 .participants__img-wr {
 	position: relative;
+	width: 270px;
+	margin: auto;
 }
 
 .participants__img {
@@ -464,8 +486,8 @@ a.phone:hover {
 	background-size: contain;
 	box-sizing: border-box;
 	border-radius: 50%;
-	width: 350px;
-	height: 350px;
+	width: 270px;
+	height: 270px;
 	position: relative;
 	z-index: 1;
 }
@@ -475,11 +497,11 @@ a.phone:hover {
 	box-sizing: border-box;
 	border-radius: 50%;
 	background: #F4F4F4;;
-	width: 470px;
-	height: 470px;
+	width: 350px;
+	height: 350px;
 	position: absolute;
-	top: -60px;
-	left: -60px;
+	top: -40px;
+	left: -40px;
 }
 
 .participants__img-wr:after{
@@ -487,12 +509,30 @@ a.phone:hover {
 	box-sizing: border-box;
 	border-radius: 50%;
 	background: #E8E8E8;
-	width: 410px;
-	height: 410px;
+	width: 310px;
+	height: 310px;
 	position: absolute;
-	top: -30px;
-	left: -30px;
+	top: -20px;
+	left: -20px;
 }
+
+.participants__list_bottom {
+    margin-top: 76px;
+}
+
+.participants__list_bottom:before {
+	width: 100%;
+	height: 5px;
+}
+
+.participants__list_bottom .participants__item {
+    margin-right: 30px;
+}
+
+.participants__list_bottom .col-md-4:last-child .participants__item {
+    margin-right: 0;
+}
+
 
 /*advantages*/
 
@@ -571,10 +611,13 @@ a.phone:hover {
     background: #2154CF;
     border: 4px solid #ffffff;
     border-radius: 10px;
-    width: 100%;
+    width: 190px;
     height: 11px;
     box-sizing: border-box;
     margin-top: 30px;
+    position: absolute;
+    top: 10px;
+    left: 140px;
 }
 
 .advantages__description {
@@ -596,8 +639,12 @@ a.phone:hover {
 /*prorgams*/
 
 .programs {
-	padding: 100px 0;
+	padding: 140px 0;
 	overflow: hidden;
+}
+
+.programs .carousel-indicators {
+    top: -47px;
 }
 
 .programs__program {
@@ -856,49 +903,45 @@ a.phone:hover {
 /*steps*/
 
 .steps {
-	padding: 100px 0;
-	overflow: hidden;
+    padding: 80px 0 125px;
+    overflow: hidden;
+}
+
+.caption_steps {
+	margin-bottom: 130px;
 }
 
 .steps__step {
 	display: flex;
 	flex-wrap: nowrap;
+	height: 100%;
 }
 
 .steps__number {
-	font-family: Roboto;
+	font-family: 'Roboto';
 	font-weight: 700;
 	font-size: 100px;
 	text-align: center;
 	color: #000000;
 	position: relative;
-	width: 150px;
+	width: 80px;
 	background: url(../images/circle.png) no-repeat #ffffff top left;
 	z-index: 1;
-	display: flex;
-    align-items: center;
+	flex-shrink: 0;
+    margin-top: 20px;
 }
 
 .steps__figure {
-	position: relative;
-}
-
-.steps__number:before {
-
-	box-sizing: border-box;
-	background: #467CFA;
-	border-radius: 50%;
-	width: 112px;
-	height: 112px;
-	position: absolute;
-	top: 10px;
-	left: 0;
+    position: absolute;
+    top: 50px;
+    right: 5px;
 }
 
 .steps__text {
 	flex: 1;
-	padding-left: 70px;
+	padding-left: 30px;
 	position: relative;
+	letter-spacing: 0.001px;
 }
 
 .steps__text:before {
@@ -913,44 +956,55 @@ a.phone:hover {
 
 .steps__caption {
 	font-family: 'Geometria';
-	font-size: 28px;
+	font-size: 26px;
+	line-height: 1.3;
 	font-weight: 700;
 	text-transform: uppercase;
 	color: #000000;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 }
 
 .steps__description {
 	font-family: 'Geometria';
 	font-size: 18px;
+	line-height: 1.3;
 	color: #2E4459;
 }
 
 .steps__note {
-	font-family: 'Geometria';
-	font-size: 32px;
-	text-align: center;
-	color: #467CFA;
+    font-family: 'Geometria';
+    font-size: 32px;
+    line-height: 1.3;
+    font-weight: 500;
+    text-align: center;
+    color: #467CFA;
+    margin: 80px 0 20px;
 }
 
 .steps__confidential {
-	display: block;
-	font-family: 'Geometria';
-	font-size: 18px;
-	text-align: center;
-	color: #000000;
-	text-decoration: none;
+    display: block;
+    font-family: 'Geometria';
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    margin: 20px 0;
 }
 
 /*team*/
 
 .team {
-	padding: 100px 0;
+	padding: 70px 0;
 	overflow: hidden;
 }
 
+#carouselExampleIndicators2 {
+    padding-top: 80px;
+}
+
 .carousel-indicators.team__carousel-indicators {
-    top: 10px;
+    top: 35px;
 }
 
 .carousel-item_team {
@@ -1019,9 +1073,8 @@ a.phone:hover {
 /*reviews*/
 
 .reviews {
-	padding: 100px 0;
+	padding: 70px 0 175px;
 	position: relative;
-	overflow: hidden;
 }
 
 .reviews__background {
@@ -1060,6 +1113,10 @@ a.phone:hover {
 .carousel {
 	z-index: 1;
 	margin: 0 -35px;
+}
+
+.reviews .carousel-indicators {
+    bottom: -55px;
 }
 
 .carousel-item_reviews {
@@ -1198,7 +1255,7 @@ footer {
 	font-weight: 500;
 }
 
-.footer__phone:hover {
+a.footer__phone:hover {
 	color: #2E4459;
 }
 
@@ -1225,12 +1282,11 @@ footer {
 
 /*media*/
 
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
 	.container {
 		max-width: 1200px;
 	}
 }
-
 
 @media screen and (max-width: 1279px) {
 	.navbar-light .navbar-nav .nav-link {
@@ -1253,6 +1309,39 @@ footer {
 	.details__video-wr {
 		left: 100px;
 		top: 470px;
+	}
+	
+	.reviews__background {
+		width: 700px;
+		height: 700px;
+		top: -450px;
+	}
+	
+}
+
+@media screen and (max-width: 1199px) {
+	
+	.advantages__line {
+		width: 125px;
+	}
+	
+	.advantages__description {
+		font-size: 22px;
+		text-align: center;
+	}
+	
+	.steps__number {
+		padding-bottom: 180px;
+	}
+	
+	.steps__text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	.participants__img-wr {
+		margin: auto 0 auto 16px;
 	}
 }
 
@@ -1299,6 +1388,34 @@ footer {
 	}
 }
 
+@media (max-width: 991px) {
+	.advantages__line {
+		width: 85px;
+		left: 120px;
+	}
+	
+	.advantages__description {
+		font-size: 18px;
+	}
+	
+	.reviews__background {
+		display: none;
+	}
+	
+	.participants__item_mobile {
+		display: flex;
+	}
+	
+	.participants__list_bottom {
+		display: none;
+	}
+	
+	.participants .col-lg-4:first-child .participants__list:before {
+		height: 80%;
+	}
+}
+
+
 @media screen and (max-width: 767px) {
 	
 	.phone {
@@ -1310,11 +1427,11 @@ footer {
 	}
 	
 	.caption {
-		font-size: 40px;
+		font-size: 36px;
 	}
 	
 	.description {
-		font-size: 24px;
+		font-size: 20px;
 	}
 	
 	.webinar-items__text {
@@ -1344,6 +1461,18 @@ footer {
 		margin-top: 30px;
 	}
 	
+	.details__video {
+		height: 320px;
+	}
+	
+	.advantages__line {
+		display: none;
+	}
+	
+	.advantages__description {
+		margin-bottom: 50px;
+	}
+	
 	.programs__content {
 		margin-bottom: 20px;
 	}
@@ -1356,6 +1485,34 @@ footer {
 		margin: 40px 0 15px;
 	}
 	
+	.caption_steps {
+		margin-bottom: 50px;
+	}
+	
+	.steps {
+    padding: 80px 0 55px;
+	}
+
+	.steps__number {
+		padding-bottom: 220px;
+		font-size: 80px;
+		width: 50px;
+	}
+	
+	.steps__caption {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	
+	.steps__description {
+		font-size: 16px;
+	}
+	
+	.steps__note {
+		font-size: 22px;
+		margin: 50px 0 20px;
+	}
+
 	.accordion__question {
 		padding: 10px 65px 10px 15px;
 		font-size: 14px;
@@ -1397,6 +1554,10 @@ footer {
 	
 	.carousel-control-prev{
 		left: -20px;
+	}
+	
+	.reviews {
+		overflow: hidden;
 	}
 
 }

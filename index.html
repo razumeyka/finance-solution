@@ -109,7 +109,7 @@
     </div>
     <div class="details">
     	<div class="container">
-    		<div class="caption">Подробнее о вебинаре</div>
+    		<div class="details__caption caption">Подробнее о вебинаре</div>
     		<div class="row details__row">
     			<div class="details__background"></div>
     			<div class="col-md-10 col-lg-8">
@@ -121,39 +121,50 @@
 					</div>
     			</div>
     			<div class="col-md-8 col-lg-6 details__video-wr">
-					<div class="details__video"></div>
+					<iframe class="details__video" src="https://www.youtube.com/embed/cMtijiBSEVw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
     		</div>
     	</div>
     </div>
     <div class="participants">
     	<div class="container">
-    		<div class="caption">Для кого этот вебинар?</div>
+    		<div class="participants__caption caption">Для кого этот вебинар?</div>
     		<div class="row">
-    			<div class="col-md-4">
+    			<div class="col-lg-4 col-md-6">
     				<div class="participants__list">
 						<div class="participants__item">Представителям e-commerce</div>
 						<div class="participants__item">Работникам товарного бизнеса</div>
 						<div class="participants__item">Оптовым поставщикам и посредникамe</div>
+						<div class="participants__item participants__item_mobile">Фрилансерам, репетиторам</div>
+						<div class="participants__item participants__item_mobile">Представителям IT-сферы</div>
     				</div>
     			</div>
-    			<div class="col-md-4">
+    			<div class="col-lg-4 d-none d-lg-block d-xl-block participants__center">
     				<div class="participants__img-wr">
     					<div class="participants__img"></div>
     				</div>    				.
     			</div>
-    			<div class="col-md-4">
+    			<div class="col-lg-4 col-md-6">
     				<div class="participants__list">
 						<div class="participants__item">Руководителям Call-центров</div>
 						<div class="participants__item">Представителям инфобизнеса</div>
 						<div class="participants__item">Частной практики (врачи, психологи и пр.)</div>
+   						<div class="participants__item participants__item_mobile">Руководителям малых производственных предприятий</div>
     				</div>
     			</div>
     		</div>
-    		<div class="participants__list flex">
-				<div class="participants__item">Фрилансерам, репетиторам</div>
-				<div class="participants__item">Представителям IT-сферы</div>
-				<div class="participants__item">Руководителям малых производственных предприятий</div>
+    		<div class="participants__list participants__list_bottom flex">
+    			<div class="row">
+    				<div class="col-md-4">
+    					<div class="participants__item">Фрилансерам, репетиторам</div>
+    				</div>
+    				<div class="col-md-4">
+    					<div class="participants__item">Представителям IT-сферы</div>
+    				</div>
+    				<div class="col-md-4">
+    					<div class="participants__item">Руководителям малых производственных предприятий</div>
+    				</div>
+    			</div>
 			</div>
     	</div>
     </div>
@@ -162,30 +173,22 @@
     	<div class="container">
     		<div class="advantages__caption caption">Для кого этот вебинар?</div>
     		<div class="row">
-    			<div class="col-md-2">
-    				<div class="advantages__number">1</div>
-    			</div>
-    			<div class="col-md-3">
-    				<div class="advantages__line"></div>
-    			</div>
-    			<div class="col-md-2">
-    				<div class="advantages__number">2</div>
-    			</div>
-    			<div class="col-md-3">
-    				<div class="advantages__line"></div>
-    			</div>
-    			<div class="col-md-2">
-    				<div class="advantages__number">3</div>
-    			</div>
-    		</div>
-    		<div class="row">
     			<div class="col-md-4">
+    				<div class="advantages__number">
+    					<div>1</div>
+    					<div class="advantages__line"></div>
+    				</div>
     				<div class="advantages__description">Личный кабинет, в котором вы сможете задавать свои вопросы</div>
     			</div>
     			<div class="col-md-4">
+    				<div class="advantages__number">
+    					<div>2</div>
+    					<div class="advantages__line"></div>
+    				</div>
     				<div class="advantages__description">Полный инструментарий по части организации и ведению бизнеса. Инструкции и документы.</div>
     			</div>
     			<div class="col-md-4">
+    				<div class="advantages__number">3</div>
     				<div class="advantages__description">Спокойствие и уверенность в завтрашнем дне. Работа «в светлую» без опасения неожиданных проверок и штрафов. Поддержку со стороны государственных институтов</div>
     			</div>
     		</div>
@@ -194,59 +197,200 @@
     </div>
     <div class="programs">
     	<div class="container">
-    		<div class="programs__program">
-    			<div class="programs__caption">Пакет 3</div>
-    			<div class="programs__inner">
-    				<div class="row">
-						<div class="col-md-6">
-							<div class="row">
-								<div class="col-md-6">
-									<div class="programs__content">
-										<div class="programs__icon programs__icon_user"></div>
-										<div class="programs__item">Личный кабинет</div>
+    		<div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active">
+						<span class="carousel-indicator-left"></span>
+						<span class="carousel-indicator-line"></span>
+						<span class="carousel-indicator-right"></span>
+					</li>
+					<li data-target="#carouselExampleIndicators3" data-slide-to="1">
+						<span class="carousel-indicator-left"></span>
+						<span class="carousel-indicator-line"></span>
+						<span class="carousel-indicator-right"></span>
+					</li>
+					<li data-target="#carouselExampleIndicators3" data-slide-to="2">
+						<span class="carousel-indicator-left"></span>
+						<span class="carousel-indicator-line"></span>
+						<span class="carousel-indicator-right"></span>
+					</li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item carousel-item_reviews active">
+						<div class="programs__program">
+							<div class="programs__caption">Пакет 1</div>
+							<div class="programs__inner">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="programs__content">
+													<div class="programs__icon programs__icon_user"></div>
+													<div class="programs__item">Личный кабинет</div>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="programs__content">
+													<div class="programs__icon programs__icon_access"></div>
+													<div class="programs__item">Доступ к вебинару</div>
+												</div>
+											</div>
+										</div>
+										<div class="programs__content programs__content_full">
+											<div class="programs__icon programs__icon_docs"></div>
+											<div class="programs__item">Пакет документов для предпринимателей с годовым доходом до 30 000 000 грн</div>
+										</div>
+										<div class="prorgams__info">
+											<div class="prorgams__additional">Отдельная папка посвящена деятельности ТОВ
+											на упрощенной системе или общей системе налогообложения</div>
+											<div class="programs__discount">Скидка 33%*</div>
+											<div class="programs__old-price">2000 грн.</div>
+											<div class="programs__price">1340 грн.</div>
+											<a href="#" class="button programs__button">Купить</a>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="programs__documents">Пакет документов включает в себя</div>
+										<ul>
+											<li class="programs__document">Реальные примеры налоговых планов для выбора. В зависимости от налогового плана</li>
+											<li class="programs__document">Алгоритм регистрации ряда ФОП, ТОВ</li>
+											<li class="programs__document">Инструкция по взаимодействию</li>
+											<li class="programs__document">Формы заявлений</li>
+											<li class="programs__document">Уставы (несколько)</li>
+											<li class="programs__document">Формы писем для деловой переписки</li>
+											<li class="programs__document">Договора купли/продажи из них два с выгодой для вас (с пояснениями особо важных мест)</li>
+											<li class="programs__document">Контракты по ВЭД. Договор аренды и субаренды</li>
+											<li class="programs__document">Трудовой договор</li>
+											<li class="programs__document">Инструкции по отчислениям, выдаче зарплаты наемным работникам</li>
+											<li class="programs__document">Инструкции, образцы (фотокопии) по ведению книги регистрации учета доходов на каждой группе</li>
+											<li class="programs__document">Формирование отчетности СПД (ФОП, ТОВ)</li>
+											<li class="programs__document">Образцы счетов и накладных . И ряд других документов</li>
+										</ul>
 									</div>
 								</div>
-								<div class="col-md-6">
-									<div class="programs__content">
-										<div class="programs__icon programs__icon_access"></div>
-										<div class="programs__item">Доступ к вебинару</div>
-									</div>
-								</div>
 							</div>
-							<div class="programs__content programs__content_full">
-								<div class="programs__icon programs__icon_docs"></div>
-								<div class="programs__item">Пакет документов для предпринимателей с годовым доходом до 30 000 000 грн</div>
-							</div>
-							<div class="prorgams__info">
-								<div class="prorgams__additional">Отдельная папка посвящена деятельности ТОВ
-								на упрощенной системе или общей системе налогообложения</div>
-								<div class="programs__discount">Скидка 33%*</div>
-								<div class="programs__old-price">2000 грн.</div>
-								<div class="programs__price">1340 грн.</div>
-								<a href="#" class="button programs__button">Купить</a>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="programs__documents">Пакет документов включает в себя</div>
-							<ul>
-								<li class="programs__document">Реальные примеры налоговых планов для выбора. В зависимости от налогового плана</li>
-								<li class="programs__document">Алгоритм регистрации ряда ФОП, ТОВ</li>
-								<li class="programs__document">Инструкция по взаимодействию</li>
-								<li class="programs__document">Формы заявлений</li>
-								<li class="programs__document">Уставы (несколько)</li>
-								<li class="programs__document">Формы писем для деловой переписки</li>
-								<li class="programs__document">Договора купли/продажи из них два с выгодой для вас (с пояснениями особо важных мест)</li>
-								<li class="programs__document">Контракты по ВЭД. Договор аренды и субаренды</li>
-								<li class="programs__document">Трудовой договор</li>
-								<li class="programs__document">Инструкции по отчислениям, выдаче зарплаты наемным работникам</li>
-								<li class="programs__document">Инструкции, образцы (фотокопии) по ведению книги регистрации учета доходов на каждой группе</li>
-								<li class="programs__document">Формирование отчетности СПД (ФОП, ТОВ)</li>
-								<li class="programs__document">Образцы счетов и накладных . И ряд других документов</li>
-							</ul>
 						</div>
 					</div>
-    			</div>
-    		</div>
+					<div class="carousel-item carousel-item_reviews">
+						<div class="programs__program">
+							<div class="programs__caption">Пакет 2</div>
+							<div class="programs__inner">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="programs__content">
+													<div class="programs__icon programs__icon_user"></div>
+													<div class="programs__item">Личный кабинет</div>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="programs__content">
+													<div class="programs__icon programs__icon_access"></div>
+													<div class="programs__item">Доступ к вебинару</div>
+												</div>
+											</div>
+										</div>
+										<div class="programs__content programs__content_full">
+											<div class="programs__icon programs__icon_docs"></div>
+											<div class="programs__item">Пакет документов для предпринимателей с годовым доходом до 30 000 000 грн</div>
+										</div>
+										<div class="prorgams__info">
+											<div class="prorgams__additional">Отдельная папка посвящена деятельности ТОВ
+											на упрощенной системе или общей системе налогообложения</div>
+											<div class="programs__discount">Скидка 33%*</div>
+											<div class="programs__old-price">2000 грн.</div>
+											<div class="programs__price">1340 грн.</div>
+											<a href="#" class="button programs__button">Купить</a>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="programs__documents">Пакет документов включает в себя</div>
+										<ul>
+											<li class="programs__document">Реальные примеры налоговых планов для выбора. В зависимости от налогового плана</li>
+											<li class="programs__document">Алгоритм регистрации ряда ФОП, ТОВ</li>
+											<li class="programs__document">Инструкция по взаимодействию</li>
+											<li class="programs__document">Формы заявлений</li>
+											<li class="programs__document">Уставы (несколько)</li>
+											<li class="programs__document">Формы писем для деловой переписки</li>
+											<li class="programs__document">Договора купли/продажи из них два с выгодой для вас (с пояснениями особо важных мест)</li>
+											<li class="programs__document">Контракты по ВЭД. Договор аренды и субаренды</li>
+											<li class="programs__document">Трудовой договор</li>
+											<li class="programs__document">Инструкции по отчислениям, выдаче зарплаты наемным работникам</li>
+											<li class="programs__document">Инструкции, образцы (фотокопии) по ведению книги регистрации учета доходов на каждой группе</li>
+											<li class="programs__document">Формирование отчетности СПД (ФОП, ТОВ)</li>
+											<li class="programs__document">Образцы счетов и накладных . И ряд других документов</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item carousel-item_reviews">
+						<div class="programs__program">
+							<div class="programs__caption">Пакет 3</div>
+							<div class="programs__inner">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="programs__content">
+													<div class="programs__icon programs__icon_user"></div>
+													<div class="programs__item">Личный кабинет</div>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="programs__content">
+													<div class="programs__icon programs__icon_access"></div>
+													<div class="programs__item">Доступ к вебинару</div>
+												</div>
+											</div>
+										</div>
+										<div class="programs__content programs__content_full">
+											<div class="programs__icon programs__icon_docs"></div>
+											<div class="programs__item">Пакет документов для предпринимателей с годовым доходом до 30 000 000 грн</div>
+										</div>
+										<div class="prorgams__info">
+											<div class="prorgams__additional">Отдельная папка посвящена деятельности ТОВ
+											на упрощенной системе или общей системе налогообложения</div>
+											<div class="programs__discount">Скидка 33%*</div>
+											<div class="programs__old-price">2000 грн.</div>
+											<div class="programs__price">1340 грн.</div>
+											<a href="#" class="button programs__button">Купить</a>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="programs__documents">Пакет документов включает в себя</div>
+										<ul>
+											<li class="programs__document">Реальные примеры налоговых планов для выбора. В зависимости от налогового плана</li>
+											<li class="programs__document">Алгоритм регистрации ряда ФОП, ТОВ</li>
+											<li class="programs__document">Инструкция по взаимодействию</li>
+											<li class="programs__document">Формы заявлений</li>
+											<li class="programs__document">Уставы (несколько)</li>
+											<li class="programs__document">Формы писем для деловой переписки</li>
+											<li class="programs__document">Договора купли/продажи из них два с выгодой для вас (с пояснениями особо важных мест)</li>
+											<li class="programs__document">Контракты по ВЭД. Договор аренды и субаренды</li>
+											<li class="programs__document">Трудовой договор</li>
+											<li class="programs__document">Инструкции по отчислениям, выдаче зарплаты наемным работникам</li>
+											<li class="programs__document">Инструкции, образцы (фотокопии) по ведению книги регистрации учета доходов на каждой группе</li>
+											<li class="programs__document">Формирование отчетности СПД (ФОП, ТОВ)</li>
+											<li class="programs__document">Образцы счетов и накладных . И ряд других документов</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
     	</div>
     </div>
     <div class="accordion">
@@ -296,9 +440,9 @@
     </div>
     <div class="steps">
     	<div class="container">
-    		<div class="caption">Порядок взаимодействия</div>
+    		<div class="caption caption_steps">Порядок взаимодействия</div>
     		<div class="row">
-    			<div class="col-md-4">
+    			<div class="col-xl-4 col-lg-12">
     				<div class="steps__step">
     					<div class="steps__number">
     						<div class="steps__figure">1</div>
@@ -309,7 +453,7 @@
     					</div>
     				</div>
     			</div>
-    			<div class="col-md-4">
+    			<div class="col-xl-4 col-lg-12">
     				<div class="steps__step">
     					<div class="steps__number">
     						<div class="steps__figure">2</div>
@@ -320,7 +464,7 @@
     					</div>
     				</div>
     			</div>
-    			<div class="col-md-4">
+    			<div class="col-xl-4 col-lg-12">
     				<div class="steps__step">
     					<div class="steps__number">
     						<div class="steps__figure">3</div>
@@ -340,19 +484,19 @@
     <div class="team">
     	<div class="container">
     		<div class="caption">Наша команда</div>
-			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+			<div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel" data-interval="false">
 				<ol class="carousel-indicators team__carousel-indicators">
-					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+					<li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active">
 						<span class="carousel-indicator-left"></span>
 						<span class="carousel-indicator-line"></span>
 						<span class="carousel-indicator-right"></span>
 					</li>
-					<li data-target="#carouselExampleIndicators" data-slide-to="1">
+					<li data-target="#carouselExampleIndicators2" data-slide-to="1">
 						<span class="carousel-indicator-left"></span>
 						<span class="carousel-indicator-line"></span>
 						<span class="carousel-indicator-right"></span>
 					</li>
-					<li data-target="#carouselExampleIndicators" data-slide-to="2">
+					<li data-target="#carouselExampleIndicators2" data-slide-to="2">
 						<span class="carousel-indicator-left"></span>
 						<span class="carousel-indicator-line"></span>
 						<span class="carousel-indicator-right"></span>
@@ -453,21 +597,22 @@
     			<div class="reviews__background3"></div>
     		</div>
     	</div>
+    	
     	<div class="container">
     		<div class="caption">Отзывы</div>
-			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">
-					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+					<li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active">
 						<span class="carousel-indicator-left"></span>
 						<span class="carousel-indicator-line"></span>
 						<span class="carousel-indicator-right"></span>
 					</li>
-					<li data-target="#carouselExampleIndicators" data-slide-to="1">
+					<li data-target="#carouselExampleIndicators3" data-slide-to="1">
 						<span class="carousel-indicator-left"></span>
 						<span class="carousel-indicator-line"></span>
 						<span class="carousel-indicator-right"></span>
 					</li>
-					<li data-target="#carouselExampleIndicators" data-slide-to="2">
+					<li data-target="#carouselExampleIndicators3" data-slide-to="2">
 						<span class="carousel-indicator-left"></span>
 						<span class="carousel-indicator-line"></span>
 						<span class="carousel-indicator-right"></span>
@@ -502,11 +647,11 @@
 					   </div>
 					</div>
 				</div>
-				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				<a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 					<span class="sr-only">Previous</span>
 				</a>
-				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				<a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
 					<span class="carousel-control-next-icon" aria-hidden="true"></span>
 					<span class="sr-only">Next</span>
 				</a>
