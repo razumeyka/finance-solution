@@ -101,6 +101,7 @@ a:hover {
     max-width: 373px;
     background: linear-gradient(180.45deg, #3A72D5 0.96%, #2154CF 55.17%, #2154CF 97.15%);
     border: 1.34884px solid #2154CF;
+	box-shadow: 0 9px 15px 0px #939598;
     box-sizing: border-box;
     border-radius: 67px;
     font-family: 'Geometria';
@@ -114,6 +115,11 @@ a:hover {
 
 a.button:hover {
 	color: #ffffff;
+	box-shadow: 0 10px 20px -10px #467CFA;
+}
+
+a.button:focus {
+	box-shadow: none;
 }
 
 /*header*/
@@ -999,8 +1005,9 @@ a.phone:hover {
 	overflow: hidden;
 }
 
-#carouselExampleIndicators2 {
+#carousel2 {
     padding-top: 80px;
+	margin: 0;
 }
 
 .carousel-indicators.team__carousel-indicators {
@@ -1008,7 +1015,29 @@ a.phone:hover {
 }
 
 .carousel-item_team {
-	padding: 50px 35px;
+	padding: 50px 0px;
+}
+
+.team .carousel-inner .carousel-item.active,
+.team .carousel-inner .carousel-item-next,
+.team .carousel-inner .carousel-item-prev {
+	display: flex;
+	align-items: stretch;
+}
+
+.team .carousel-inner .carousel-item-right.active,
+.team .carousel-inner .carousel-item-next {
+	transform: translateX(33%);
+}
+
+.team .carousel-inner .carousel-item-left.active, 
+.team .carousel-inner .carousel-item-prev {
+	transform: translateX(-33%);
+}
+  
+.team .carousel-inner .carousel-item-right,
+.team .carousel-inner .carousel-item-left{ 
+	transform: translateX(0);
 }
 
 .team__co-worker {
