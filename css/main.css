@@ -537,10 +537,6 @@ a.phone:hover {
 	left: -20px;
 }
 
-.participants__list_bottom {
-    margin-top: 76px;
-}
-
 .participants__list_bottom:before {
 	width: 100%;
 	height: 5px;
@@ -1025,8 +1021,27 @@ a.phone:hover {
 	margin: 0;
 }
 
-.carousel-indicators.team__carousel-indicators {
+.team .carousel-indicator-left, .team .carousel-indicator-right {
     top: 35px;
+}
+
+.team .carousel-indicator-line {
+    top: 39px;
+}
+
+.team .carousel-control-prev, .team .carousel-control-next {
+	background: none;
+    top: 0;
+    width: 110px;
+    margin: 0 auto;
+}
+
+.team  .carousel-control-prev {
+    left: -100px; 
+}
+
+.team  .carousel-control-next {
+    right: -100px; 
 }
 
 .carousel-item_team {
@@ -1223,7 +1238,9 @@ a.phone:hover {
 	right: -30px;
 }
 
-.carousel-indicators li, .carousel-indicators li.active {
+.carousel-indicators li, .carousel-indicators li.active,
+.carousel-indicators .carousel-indicators_team, .carousel-indicators .carousel-indicators_team.active
+{
 	background: none;
 	margin-left: 30px;
 	margin-right: 30px;
@@ -1253,7 +1270,8 @@ a.phone:hover {
     height: 8px;
 }
 
-.carousel-indicators li.active .carousel-indicator-left:before, .carousel-indicators li.active .carousel-indicator-right:before {
+.carousel-indicators li.active .carousel-indicator-left:before,
+.carousel-indicators .carousel-indicators_team.active .carousel-indicator-left:before{
 	content: "";
 	width: 25px;
 	height: 25px;
@@ -1265,19 +1283,67 @@ a.phone:hover {
 	left: -9px;
 }
 
+.carousel-indicators .carousel-indicator-right::before, .carousel-indicators .carousel-indicator-right::after {
+	content: '';
+    position: absolute;
+    width: 25px;
+	height: 25px;
+    border-radius: 100%;
+	top: -9px;
+	left: -9px;
+}
+
+.carousel-indicators .carousel-indicator-right::before {
+    border: 1px solid transparent;
+}
+
+.carousel-indicators li.active .carousel-indicator-right:before,
+.carousel-indicators .carousel-indicators_team.active .carousel-indicator-right:before
+{
+    border-top-color: #2154CF;
+    border-right-color: #2154CF;
+    border-bottom-color: #2154CF;
+    transition: border-top-color 0.15s linear, border-right-color 0.15s linear 0.1s, border-bottom-color 0.15s linear 0.2s;
+}
+
+.carousel-indicators .carousel-indicator-right::after {
+    border: 0 solid transparent;
+}
+
+.carousel-indicators li.active .carousel-indicator-right:after,
+.carousel-indicators .carousel-indicators_team.active .carousel-indicator-right:after
+{
+    border-top: 1px solid #2154CF;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+    transition: border-left-width 0s linear 0.35s, -webkit-transform 0.8s linear 0s;
+    transition: transform 0.8s linear 0s, border-left-width 0s linear 0.35s;
+    transition: transform 0.84s linear 0s, border-left-width 0s linear 0.35s, -webkit-transform 0.8s linear 0s;
+}
+
 .carousel-indicator-line {
-	display: none;
 	background: #2154CF;
 	height: 1px;
-	width: 20px;
+	width: 0;
 	position: absolute;
 	left: 16px;
 	top: 4px;
+	transition: width 0.3s ease-out;
+    -moz-transition: width 0.7s 0.1s ease;
+    -o-transition: width 0.7s 0.1s ease;
+    -webkit-transition: width 0.7s 0.1s ease;
 }
 
-.carousel-indicators li.active .carousel-indicator-line {
-	display: block;
+.carousel-indicators li.active .carousel-indicator-line,
+.carousel-indicators .carousel-indicators_team.active .carousel-indicator-line {
+	width: 20px;
 }
+
+
+
+    
 
 /*footer*/
 
