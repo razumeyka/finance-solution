@@ -426,6 +426,21 @@ a.phone:hover {
 
 .participants {
 	padding: 20px 0 75px;
+	overflow: hidden;
+}
+
+.participants .container {
+	position: relative;
+}
+
+.participants_background {
+	background: url(../images/dots.png) repeat center;
+	background-size: contain;
+	width: 550px;
+	height: 500px;
+	position: absolute;
+	bottom: 25px;
+    right: -215px;
 }
 
 .participants__caption {
