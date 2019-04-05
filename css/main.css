@@ -1021,18 +1021,9 @@ a.phone:hover {
 	margin: 0;
 }
 
-.team .carousel-indicator-left, .team .carousel-indicator-right {
-    top: 35px;
-}
-
-.team .carousel-indicator-line {
-    top: 39px;
-}
-
 .team .carousel-control-prev, .team .carousel-control-next {
-	background: none;
-    top: 0;
-    width: 110px;
+    top: 15px;
+    width: 45px;
     margin: 0 auto;
 }
 
@@ -1696,6 +1687,10 @@ a.footer__phone:hover {
 	
 	.carousel-control-prev, .carousel-control-next {
 		display: none;
+	}
+	
+	.team .carousel-control-prev,  .team .carousel-control-next {
+		display: block;
 	}
 }
 
