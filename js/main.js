@@ -51,15 +51,17 @@ $(document).ready(function(){
 		  }
 	});
 	
+	$('.carousel-control-prev').click(function(){
+        $(".carousel-control-next").find(".carousel-indicators_team").removeClass("active");
+		$(this).find(".carousel-indicators_team").addClass("active");
+    });
+	
 	$('.carousel-control-next').click(function(){
         $(".carousel-control-prev").find(".carousel-indicators_team").removeClass("active");
 		$(this).find(".carousel-indicators_team").addClass("active");
     });
 	
-	$('.carousel-control-prev').click(function(){
-        $(".carousel-control-next").find(".carousel-indicators_team").removeClass("active");
-		$("this").find(".carousel-indicators_team").addClass("active");
-    });
+	
 	
 // swipe
 	$(".carousel").swipe( {
